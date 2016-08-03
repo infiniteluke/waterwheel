@@ -17,7 +17,7 @@
     "test": "nyc --reporter=html ava -v && nyc report",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint .",
-    "postinstall": "postinstall-build dist 'npm run build'"
+    "postinstall": "npm run build"
   },
   "keywords": [
     "drupal",
@@ -28,8 +28,7 @@
   ],
   "dependencies": {
     "axios": "^0.11.0",
-    "drupal-api": "^0.0.3",
-    "postinstall-build": "^0.2.1"
+    "drupal-api": "^0.0.3"
   },
   "devDependencies": {
     "ava": "^0.15.1",
